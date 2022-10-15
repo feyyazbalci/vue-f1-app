@@ -27,7 +27,7 @@
                   <span class="material-icons q-ml-sm">
                     scoreboard
                   </span>
-                  <span class="text-caption text-dark q-mx-md">(551) points</span>
+                  <span class="text-caption text-dark q-mx-md">551 points</span>
                 </div>
                 <div class="bg-grey q-mr-sm q-pa-sm rounded-borders">
                   <span class="material-icons q-ml-sm">
