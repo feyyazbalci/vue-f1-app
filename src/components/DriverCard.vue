@@ -19,7 +19,7 @@
     
             </q-card-section>
     
-            <q-card-section class="col-3 flex flex-start">
+            <q-card-section class="col-2 flex flex-start">
                 <!-- <q-img class="rounded-borders" :class="getColor(driver.Constructors[0].name)"
                     :src="getImgUrl(driver.Driver.driverId)" /> -->
             </q-card-section>
