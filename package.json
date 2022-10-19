@@ -11,6 +11,7 @@
     "@chenfengyuan/vue-countdown": "^2.1.0",
     "@quasar/extras": "^1.15.4",
     "axios": "^0.27.2",
+    "bulma": "^0.9.4",
     "quasar": "^2.9.1",
     "vue": "^3.2.40",
     "vue-awesome-countdown": "^1.1.4",

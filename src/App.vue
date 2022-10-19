@@ -19,6 +19,6 @@ import Footer from './components/Footer.vue'
 
 </template>
 
-<style scoped>
-
+<style>
+@import 'bulma/css/bulma.min.css';
 </style>

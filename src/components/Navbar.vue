@@ -1,71 +1,57 @@
 <template>
+  <nav class="navbar has-background-grey navbar" aria-label="main navigation" role="navigation">
+    <div class="container is-max-desktop px-2">
+      <div class="navbar-brand">
+        <div class="navbar-item is-size-4 is-family-monospace">
+          <RouterLink to="/" class="has-text-white-bis has-text-weight-semibold">F1 World</RouterLink>
+        </div>
 
-    <q-layout view="lHh lpr lFf" container style="height: 115px">
-      <q-header elevated class="bg-dark" >
-        <q-toolbar>
-          
-          <q-toolbar-title class="text-weight-bold q-pa-sm">F1 World</q-toolbar-title>
-        </q-toolbar>
+        <a @click.prevent="showMobileNav = !showMobileNav" class="navbar-burger" :class="{ 'is-active' : showMobileNav }" aria-expanded="false" aria-label="menu"
+          data-target="navbarBasicExample" role="button" ref="navbarBurgerRef">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-        <q-tabs v-model="tab" >
-          
-          <q-btn to="/" class="q-mr-sm">
-            <span class="q-mr-sm material-icons" >
-              home
-            </span>
-          </q-btn>
+      <div id="navbarBasicExample" class="navbar-menu" ref="navbarMenuRef"  :class="{ 'is-active' : showMobileNav }">
 
-          <q-btn to="/driverStandings" class="q-mr-sm">
-            <span class="q-mr-sm material-icons">
-              sports_motorsports
-            </span>
-            
-              Drivers
-            
-           
-          </q-btn>   
-
-          <q-btn to="/constructorStandings" class="q-mr-sm">
-            <span class="q-mr-sm material-icons">
-              directions_car
-            </span>
-            
-              Constructor Standings
-            
-          </q-btn>   
-
-          <q-btn to="/calender" class="q-mr-sm">
-            <span class="q-mr-sm material-icons">
-              date_range
-            </span>
-            
-              Calender
-            
-           
-          </q-btn>   
-
-          <!-- <q-btn to="/seasons" class="q-mr-sm">
-            <span class="q-mr-sm material-icons">
-              today
-            </span>
-            Seasaon
-          </q-btn>    -->
-          
-        </q-tabs>
-      </q-header>
-    </q-layout>
-
+        <div class="navbar-end">
+          <RouterLink @click="showMobileNav = false" to="/" class="navbar-item" active-class="is-active">
+            Home
+          </RouterLink>
+          <RouterLink @click="showMobileNav = false" to="/driverStandings" class="navbar-item" active-class="is-active">
+            Drivers
+          </RouterLink>
+          <RouterLink @click="showMobileNav = false" to="/constructorStandings" class="navbar-item" active-class="is-active">
+            Constructor Standings
+          </RouterLink>
+          <RouterLink @click="showMobileNav = false" to="/calender" class="navbar-item" active-class="is-active">
+            Calender
+          </RouterLink>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script setup>
+
 import { ref } from 'vue'
 
-
-
-const tab = ref('Home')
+const showMobileNav = ref(false)
+const navbarMenuRef = ref(null)
+const navbarBurgerRef = ref(null)
 
 </script>
 
-<style lang="scss" scoped>
-
+<style>
+@media (max-width: 1023px) {
+  .navbar-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
 </style>
+

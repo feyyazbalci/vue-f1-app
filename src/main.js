@@ -12,6 +12,7 @@ import VueCountdown from '@chenfengyuan/vue-countdown';
 import 'quasar/dist/quasar.css'
 import './assets/main.css'
 
+
 const app = createApp(App)
 
 app.component(VueCountdown.name, VueCountdown);

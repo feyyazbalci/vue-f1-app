@@ -1,5 +1,5 @@
 <template>
-    <div class="footer q-px-md q-mt-lg bg-dark">
+    <div class="myFooter q-px-md q-mt-lg bg-dark">
         <div class="q-pa-md">
             <p class="text-center">Created by <i class="text-amber  text-weight-bold">@FeyyazBalcı</i></p>
         </div>
@@ -12,9 +12,8 @@
 </script>
 
 <style scoped>
-.footer {
+.myFooter {
     color: silver;
-    position: sticky;
     bottom: 0;
     width: 100%;
 }
