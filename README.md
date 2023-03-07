@@ -1,6 +1,6 @@
 # f1-news
 
-This template should help get you started developing with Vue 3 in Vite.
+You can visit website from [here](https://f1world.netlify.app/).
 
 ## Recommended IDE Setup
 
