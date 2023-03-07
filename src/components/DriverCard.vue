@@ -84,7 +84,7 @@ export default {
         },
         getImgUrl(picture) {
             try {
-                return new URL(`../assets/img/drivers/2022/${picture}.png`, import.meta.url).href
+                return new URL(`../assets/img/drivers/2023/${picture}.png`, import.meta.url).href
             } catch (e) {
                 return null
             }
